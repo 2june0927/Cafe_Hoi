@@ -1,0 +1,9 @@
+html{
+    font-family:Pretendard,sans-serif;
+    font-size:var(--font-size-pc);
+    font-weight: var(--font-medium);
+}
+.commonFrame{
+    width:1280px;
+    margin:0 auto;
+}

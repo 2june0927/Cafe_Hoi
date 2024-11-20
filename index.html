@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페호이</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="./css/scroll.css">
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- swiper js 설치파일 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="pc">
+        <div class="commonFrame">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo_white.svg" alt="카페호이 로고">
+                </a>
+            </h1>
+            <ul class="gnb">
+                <li>
+                    <a href="#">카페호이 소개</a>
+                    <ul>
+                        <li><a href="#">카페 호이</a></li>
+                        <li><a href="#">매장</a></li>
+                        <li><a href="#">브랜드 브로슈어</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./story_coffee.html">메뉴이야기</a>
+                    <ul>
+                        <li><a href="./story_coffee.html">커피 이야기</a></li>
+                        <li><a href="#">디저트 이야기</a></li>
+                        <li><a href="#">델리 이야기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">브랜드 지원</a>
+                    <ul>
+                        <li><a href="#">호이 페어링 플랜트</a></li>
+                        <li><a href="#">호이 디저트 플랜트</a></li>
+                        <li><a href="#">F&B센터</a></li>
+                        <li><a href="#">HOI센터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">가맹점 창업 안내</a>
+                    <ul>
+                        <li><a href="#">온라인 창업상담신청</a></li>
+                        <li><a href="#">가맹점 개설 안내</a></li>
+                        <li><a href="#">창업 설명회</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">가맹점 전용 금융 상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">새소식&공지</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="header_mo mo">
+        <h1 class="logo_mo">
+            <a href="./index.html">
+                <img src="./img/logo_white.svg" alt="카페호이">
+            </a>
+        </h1>
+        <span id="btn_gnb">
+            <img src="./img/menu_2.svg" alt="메뉴열기 버튼">
+        </span>
+        <div class="hidden_gnb">
+            <div class="hidden_gnb_top">
+                <h1 class="logo_mo">
+                    <a href="./index.html">
+                        <img src="./img/logo_black.svg" alt="카페호이">
+                    </a>
+                </h1>
+                <span id="btn_close_gnb">
+                    <img src="./img/close.svg" alt="메뉴닫기 버튼">
+                </span>
+            </div>
+            <section class="gnb_mo_wrap">
+                <ul class="gnb_mo">
+                    <li>
+                        <a href="#">카페호이 소개</a>
+                        <ul>
+                            <li><a href="#">카페 호이</a></li>
+                            <li><a href="#">매장</a></li>
+                            <li><a href="#">브랜드 브로슈어</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <a href="./story_coffee.html">메뉴이야기</a>
+                        <ul>
+                            <li><a href="./story_coffee.html">커피 이야기</a></li>
+                            <li><a href="#">디저트 이야기</a></li>
+                            <li><a href="#">델리 이야기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드 지원</a>
+                        <ul>
+                            <li><a href="#">호이 페어링 플랜트</a></li>
+                            <li><a href="#">호이 디저트 플랜트</a></li>
+                            <li><a href="#">F&B센터</a></li>
+                            <li><a href="#">HOI센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">가맹점 창업 안내</a>
+                        <ul>
+                            <li><a href="#">온라인 창업상담신청</a></li>
+                            <li><a href="#">가맹점 개설 안내</a></li>
+                            <li><a href="#">창업 설명회</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">가맹점 전용 금융 상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">새소식&공지</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div class="hidden_gnb_bottom">
+                <a href="#" class="btn_startup">창업안내 바로가기</a>
+                <ul class="sns">
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./img/youtube.svg" alt="유튜브">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./img/instagram.svg" alt="인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./img/facebook.svg" alt="페이스북">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./img/x.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+
+
+    </div>
+
+    <main>
+        
+    <div class="swiper station1">
+        <ul class="swiper-wrapper train">
+            <li class="swiper-slide"><img src="./img/hero_banner1.jpg" alt="나만의 DIY젤라또"></li>
+            <li class="swiper-slide"><img src="./img/hero_banner2.jpg" alt="샌드위치"></li>
+            <li class="swiper-slide"><img src="./img/hero_banner3.jpg" alt="출근길 할인 프로모션"></li>
+        </ul>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="swiper station2">
+        <ul class="swiper-wrapper train">
+            <li class="swiper-slide"><img src="./img/mo_hero_banner_1.jpg" alt="나만의 DIY젤라또"></li>
+            <li class="swiper-slide"><img src="./img/mo_hero_banner_2.jpg" alt="샌드위치"></li>
+            <li class="swiper-slide"><img src="./img/mo_hero_banner_3.jpg" alt="출근길 할인 프로모션"></li>
+        </ul>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-scrollbar"></div>
+    </div>  
+
+
+    <div class="commonFrame type1">
+        <figure><img src="./img/coffee_story-100.jpg" alt="카페 호이의 커피이야기"></figure>
+        <section>
+            <h2><strong><b>Cafe Hoi</b></strong>만의 <br>특별한 커피 스토리</h2>
+            <section>
+                <h3><strong>커피에 담긴 이야기</strong>를 전하다</h3>
+                <p>카페 호이만의 커피는 단순한 원두의 결합이 아닌, 전 세계에서 공수한 최상급 생두를 엄선하고, 매장에서 직접 로스팅을 통해 신선한 풍미를 극대화합니다. 커피의 본연의 맛과 향을 최대로 살리기 위해 각 원두의 개성과 특징에 맞춘 로스팅 프로파일을 개발, 지속적으로 연구하며 최고의 한 잔을 만들어냅니다. </p>
+            </section>
+            <section>
+                <h3><strong>시그니처 블렌드</strong>의 탄생</h3>
+                <p>카페 호이의 시그니처 블렌드는 전통과 혁신의 조화를 이루며, 고객들이 커피 한 잔에서 깊고 풍부한 맛의 여운을 느낄 수 있도록 설계되었습니다. 농후한 초콜릿의 풍미, 은은한 과일의 산미, 그리고 깊이 있는 바디감이 완벽하게 어우러져, 마실 때마다 새로운 감동을 선사합니다.</p>
+            </section>
+            <section>
+                <h3>하루의 <strong>특별한 여유</strong>를 선사하다</h3>
+                <p>카페 호이는 커피가 단순한 음료를 넘어, 하루의 기쁨과 여유를 채워주는 특별한 경험이 될 수 있도록 노력합니다. 매일 로스팅, 매일 신선한 커피. 카페 호이에서 느껴보세요. </p>
+            </section>
+        </section>
+    </div>
+
+    <div class="commonFrame title1">
+        <h2><b>Hoi’s Signature</b></h2>
+        <p><strong>카페 호이만의 특별한 메뉴</strong>를 경험하실 수 있습니다.</p>
+    </div>
+
+    <div class="commonFrame desc1">
+        <figure>
+            <img src="./img/hoi_crema-100.jpg" alt="호이 크레마">
+        </figure>
+        <div class="txt">
+            <h3>호이 크레마 <strong>(Hoi Crema)</strong></h3>
+            <p>엄선된 최상급 원두를 사용해 매장에서 직접 로스팅하여 신선함을 극대화했습니다. 에스프레소에 농축된 고소한 맛과 은은한 산미, 그리고 부드러운 크레마가 가득 퍼지며 커피 본연의 매력을 선사합니다.</p>
+            <p class="enp">Hoi Crema maximizes freshness by roasting directly in-store using selected top-notch beans. It is filled with rich and savory flavors, subtle acidity and soft crema, giving coffee its natural charm.</p>
+        </div>
+    </div>
+    <div class="commonFrame desc2">
+        <figure>
+            <img src="./img/earl_gray-100.jpg" alt="얼그레이 크림 바닐라 라떼">
+        </figure>
+        <div class="txt">
+            <h3>얼그레이 크림 바닐라 라떼 <strong>(Earl grey cream vanilla latte)</strong></h3>
+            <p>얼그레이 크림 바닐라 라떼는 엄선된 얼그레이 티와 고소한 바닐라 시럽을 부드러운 크림과 함께 조화시켜 향긋하면서도 달콤한 풍미를 선사합니다. 깊고 진한 얼그레이의 향과 크리미한 텍스처가 어우러지는 음료입니다.</p>
+            <p class="enp">Earl Grey Cream Vanilla Latte combines selected Earl Grey Tea with savory vanilla syrup with soft cream for a fragrant yet sweet flavor. It is a drink that blends deep, dark Earl Grey scents with creamy textures.</p>
+        </div>
+    </div>
+    <div class="commonFrame desc1 last_desc">
+        <figure>
+            <img src="./img/dalgona-100.jpg" alt="달고나 크림 라떼">
+        </figure>
+        <div class="txt">
+            <h3>달고나 크림 라떼 <strong>(Dalgona cream latte)</strong></h3>
+            <p>달고나 크림 라떼는 진한 에스프레소와 부드러운 우유에 달고나 크림이 올려져 있는 메뉴입니다. 크리미하고 고소한 라떼와 달고나의 달콤함이 어우러져 누구나 반할 수 밖에 없는 음료입니다. </p>
+            <p class="enp">Dalgona Cream Latte is a menu with Dalgona cream on top of thick espresso and soft milk. The combination of creamy and savory latte and the sweetness of Dalgona makes it a drink that everyone can't help but fall in love with.</p>
+        </div>
+    </div>
+    
+
+
+    <!-- <div class="commonFrame title3">
+        <h2>Hoi’s Signature</h2>
+        <p><strong>카페 호이만의 특별한 메뉴</strong>를 경험하실 수 있습니다.</p>
+    </div>
+    <div class="commonFrame fade">
+        <div class="station3 swiper">
+            <ul class="train swiper-wrapper">
+                <li class="swiper-slide"><img src="./img/hoi_crema-100.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="./img/earl_gray-100.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="./img/dalgona-100.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="station4 swiper">
+            <ul class="train swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class=fade_txt">
+                        <h3>달고나 크림 라떼 <strong>(Dalgona cream latte)</strong></h3>
+                        <p>달고나 크림 라떼는 진한 에스프레소와 부드러운 우유에 달고나 크림이 올려져 있는 메뉴입니다. 크리미하고 고소한 라떼와 달고나의 달콤함이 어우러져 누구나 반할 수 밖에 없는 음료입니다. </p>
+                        <p class="enp">Dalgona Cream Latte is a menu with Dalgona cream on top of thick espresso and soft milk. The combination of creamy and savory latte and the sweetness of Dalgona makes it a drink that everyone can't help but fall in love with.</p>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="fade_txt">
+                        <h3>얼그레이 크림 바닐라 라떼 <strong>(Earl grey cream vanilla latte)</strong></h3>
+                        <p>얼그레이 크림 바닐라 라떼는 엄선된 얼그레이 티와 고소한 바닐라 시럽을 부드러운 크림과 함께 조화시켜 향긋하면서도 달콤한 풍미를 선사합니다. 깊고 진한 얼그레이의 향과 크리미한 텍스처가 어우러지는 음료입니다.</p>
+                        <p class="enp">Earl Grey Cream Vanilla Latte combines selected Earl Grey Tea with savory vanilla syrup with soft cream for a fragrant yet sweet flavor. It is a drink that blends deep, dark Earl Grey scents with creamy textures.</p>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="fade_txt">
+                        <h3>달고나 크림 라떼 <strong>(Dalgona cream latte)</strong></h3>
+                        <p>달고나 크림 라떼는 진한 에스프레소와 부드러운 우유에 달고나 크림이 올려져 있는 메뉴입니다. 크리미하고 고소한 라떼와 달고나의 달콤함이 어우러져 누구나 반할 수 밖에 없는 음료입니다. </p>
+                        <p class="enp">Dalgona Cream Latte is a menu with Dalgona cream on top of thick espresso and soft milk. The combination of creamy and savory latte and the sweetness of Dalgona makes it a drink that everyone can't help but fall in love with.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+    <div class="outer_frame">
+        <div class="commonFrame">
+            <h2>카페 호이와 함께하는 특별한 성공 스토리 </h2>
+            <p><strong>당신만의 특별한 공간을 만들어가세요.</strong></p>
+            <p>카페 호이의 이야기를 당신만의 특별한 공간으로 이어가고 싶으신가요? 당신의 열정과 꿈을 현실로 만들 수 있도록, 카페 호이가 함께하겠습니다. 첫걸음부터 성공적인 운영까지, 함께하는 모든 순간이 더욱 특별해지도록 저희가 도와드리겠습니다.
+                카페 창업은 단순한 비즈니스가 아니라, 나만의 이야기를 담은 공간을 만들어가는 과정입니다. 카페 호이는 그 여정 속에서 당신의 동반자가 되어, 작은 디테일부터 큰 성공까지 함께 고민하고 도와드리겠습니다. 
+                함께하는 모든 한 걸음 한 걸음이 소중한 추억이 될 수 있도록, 저희가 최선을 다해 지원하겠습니다.
+            </p>
+            <div class="direct">
+                <a href="#" class="btn_startup">창업안내 바로가기</a>
+                <a href="#" class="btn_startup_white">가맹상담 바로가기</a>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+    <footer>
+        <div class="commonFrame">
+            <section class="footer1">
+                <ul class="footer_menu">
+                    <li><a href="#"><strong>이용약관</strong></a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">위치기반 서비스 이용약관</a></li>
+                    <li><a href="#">이메일 무단수집 거부</a></li>
+                </ul>
+                <dl class="info">
+                    <dt>대표이사 : </dt>
+                    <dd>고이준</dd>
+                    <dt>개인정보보호책임자 : </dt>
+                    <dd>고이준</dd>
+                    <dt>사업자 등록번호 : </dt>
+                    <dd>000-00-000000</dd>
+                    <dt>통신판매업종신고증 : </dt>
+                    <dd>제0000-ㅁㅁㅁㅁ-0000호</dd>
+                    <dt>대표 이메일 : </dt>
+                    <dd>cafehoi@naver.com</dd>
+                </dl>
+                <div class="copyright">
+                    이 홈페이지는 취업 목적의 포트폴리오용으로 제작되었습니다. <br>
+                    Web designer 고이준
+                </div>
+            </section>
+            <section class="footer2">
+                <ul class="footer_sns">
+                    <li><a href="#"><img src="./img/youtube_w.svg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/instagram_w.svg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/facebook_w.svg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/x_w.svg" alt=""></a></li>
+                </ul>
+                <h1 class="footer_logo">
+                    <a href="./index.html">
+                        <img src="./img/logo_white.svg" alt="카페 호이">
+                    </a>
+                </h1>
+            </section>            
+        </div>
+    </footer>
+</body>
+</html>

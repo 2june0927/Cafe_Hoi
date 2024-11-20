@@ -1,0 +1,126 @@
+html{
+    font-family:Pretendard,sans-serif;
+    font-size:var(--font-size-pc);
+    font-weight: var(--font-medium);
+}
+@font-face {
+   font-family: 'UhBeeJJIBBABBA';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeJJIBBABBA.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   }
+
+.commonFrame{
+    width:1280px;
+    margin:0 auto;
+    word-break: keep-all;
+}
+strong{
+   color: var(--main-color);
+ }
+ b{
+   font-family: 'UhBeeJJIBBABBA';
+ }
+ h2{
+   font-size: 2.5rem;
+   font-weight: var(--font-bold);
+   line-height: 1.1;
+ }
+ h3{
+   font-size: 1.1rem;
+   font-weight: var(--font-bold);
+   line-height: 1.1;
+ }
+ h4{
+   font-size: 1rem;
+   font-weight: var(--font-bold);
+   line-height: 1.1;
+ }
+
+ p{
+   font-size: 1rem;
+   font-weight: var(--font-medium);
+   line-height: 1.4;
+   word-break: keep-all;
+ }
+
+ body::-webkit-scrollbar {
+   display: none; /* Webkit 기반 브라우저에서 스크롤바 숨기기 */
+}
+
+ /* 버튼 스타일 */
+ .btn_startup{
+    /* 선택한 태그가 a태그 뿐만 아니라 span태그 같은 다른 태그가 될 수도 있다고 가정 */
+    display: inline-block;
+    background-color: var(--main-color);
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+    cursor: pointer;
+ }
+ .btn_startup:hover{
+    color: black;
+ }
+ .btn_startup:active{
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    box-sizing: border-box;
+ }
+ .btn_startup.inactive{
+    color: var(--inactive-color);
+    background-color: #fff;
+    border: 1px solid var(--inactive-color);
+    pointer-events: none;
+ }
+ .btn_startup_white{
+    display: inline-block;
+    border: 1px solid var(--main-color);
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+    cursor: pointer;
+ }
+ .btn_startup_white:hover{
+    color: black;
+    background-color: #fff;
+ }
+ .btn_startup_white:active{
+    background-color: var(--main-color);
+ }
+
+
+
+ .btn_common{
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+ }
+ .btn_common:hover{
+    background-color: var(--main-color);
+    color: #fff;
+ }
+ .btn_common:active{
+    color: black;
+ }
+ .btn_common_orange{
+    display: inline-block;
+    background-color: var(--main-color);
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+ }
+ .btn_common_orange:hover{
+    color: #000;
+ }
+ .btn_common_orange:active{
+    background-color: #ffffff00;
+    color: #fff;
+    border: 1px solid var(--main-color);
+ }
+
+
+.enp{
+   color: var(--point-color);
+   font-weight: var(--font-thin);
+}

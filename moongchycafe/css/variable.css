@@ -1,0 +1,13 @@
+:root{
+    --font-bold:600;
+    --font-medium:500;
+    --main-color:#BA000C;
+    --inActive-color:#b7b7b7;
+    --font-size-pc:20px;
+    --font-size-tab:18px;
+    --font-size-mobile:14px;
+    --space-small:1rem;
+    --space-middle:2rem;
+    --space-large:3.5rem;
+    --space-xlarge:7rem;
+}
