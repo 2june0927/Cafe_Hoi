@@ -6,6 +6,7 @@
 }
 
 @media (max-width:1280px){
+
     .mo{display: block;}
     html{
         font-size: var(--font-size-tab);
@@ -18,6 +19,9 @@
         margin:0 var(--space-small);
     }
     .commonFrame.station5{
+        margin:0 var(--space-small);
+    }
+    .commonFrame.station6{
         margin:0 var(--space-small);
     }
     .type1{
@@ -65,7 +69,7 @@
         box-sizing: border-box;
         background-color: #fff;
         transform: translateX(100%);
-        transition: all 0.5s ease 0s;
+        /* transition: all 0.5s ease 0s; */
     }
     .hidden_gnb.on{
         transform: translateX(0%);
@@ -199,6 +203,33 @@
     .commonFrame.desc3{
         gap: 1rem;
      }
+     .station6 figure{
+        width: 100%;
+        height: 20rem;
+    }
+    .commonFrame.option_bar{
+        margin: var(--space-middle) 1rem;
+    }
+   .commonFrame.notice_form{
+    margin-bottom: var(--space-small);
+   }
+
+   .commonFrame.bbs_pagination{
+    margin-bottom: var(--space-xlarge);
+   }
+
+   .commonFrame.form_submit{
+    margin-bottom: var(--space-xlarge);
+   }
+   .commonFrame.large_margin{
+    margin: var(--space-large) 1rem;
+   }
+   .commonFrame.smb{
+    margin-bottom: var(--space-small);
+   }
+   .commonFrame.lmb{
+    margin-bottom: var(--space-large);
+    }
 }
 
 @media (max-width:768px){
@@ -306,8 +337,35 @@
         flex-grow: 0;
         flex-basis: auto;
      }
+     .list_table tr th:nth-of-type(2){
+        display: none;
+     }
+     .list_table tr th:nth-of-type(4){
+        display: none;
+     }
+     .list_table tr td:nth-of-type(2){
+        display: none;
+     }
+     .list_table tr td:nth-of-type(4){
+        display: none;
+     }
+     .list_table th:last-of-type{
+        width: 30%;
+    }
+ 
+    .list_table th:nth-of-type(3){
+        width: 60%;
+    }
+    
+    .list_table th:nth-of-type(1){
+        width:10%;
+    }
+    
+ 
+
 }
 @media (max-width:300px){
+    
     .hidden_gnb_bottom{
         flex-direction: column;
     }
@@ -320,5 +378,23 @@
     }
     .direct{
         flex-direction: column;
+    }
+    .commonFrame.option_bar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .list_table th:last-of-type{
+        display: none;
+    }
+    .list_table td:last-of-type{
+        display: none;
+    }
+ 
+    .list_table th:nth-of-type(3){
+        width: 60%;
+    }
+    
+    .list_table th:nth-of-type(1){
+        width:10%;
     }
 }

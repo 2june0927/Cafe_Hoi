@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="admin">
+    <aside class="fixed_menu">
+    </aside>
+    <div class="modal"></div>
+    <div class="popups">
+        <div class="popup_title">이 글을 삭제하시겠습니까?</div>
+        <div class="popup_control">
+            <span class="btn_common_orange" id="btn_delete_yes">네</span>
+            <span class="btn_common" id="btn_delete_no">아니요</span>
+        </div>
+    </div>
+
+
+    <div class="header_wrap"></div>
+    <main>
+        <div class="sub_banner sub1">
+            <div class="banner_txt">
+                <h2>공지사항</h2>
+                <p>카페 호이의 최신 소식과 중요한 안내 사항을 확인하실 수 있는 공간입니다. <br>
+                    이벤트와 영업 시간 변경, 특별 공지 등 유용한 정보를 신속하게 전해드립니다. <br>
+                    언제나 고객님과 소통하며, 더욱 즐거운 카페 호이가 되겠습니다.
+                </p>
+            </div>
+        </div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <h3 class="commonFrame large_margin">카페 호이 리뉴얼 공사 일정 안내</h3>
+        <div class="commonFrame option_bar bb">
+            <section class="view_info">
+                <span>카페호이관리자</span>
+                <span>(2024.09.16 17:23:05)</span>
+                <span>조회수 23</span>
+            </section>
+            <section class="option_admin button_list">
+                <a href="#"><img src="./img/button_edit.svg" alt="글 수정하기"></a>
+                <a href="#" id="btn_delete"><img src="./img/button_trash.svg" alt="휴지통"></a>
+            </section>
+        </div>
+        <div class="commonFrame view_txt bb smb"></div>
+        <div class="commonFrame buttons lmb">
+            <a href="/notice_list.html" class="btn_common">목록으로</a>
+        </div>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+    <script>
+        let btn_delete = document.querySelector("#btn_delete")
+        let modal = document.querySelector(".modal")
+        let popups = document.querySelector(".popups")
+        let btn_delete_yes  = document.querySelector("#btn_delete_yes")
+        let btn_delete_no  = document.querySelector("#btn_delete_no")
+
+        btn_delete.addEventListener("click",function(event){
+            event.preventDefault()
+            modal.classList.add("on")
+            popups.classList.add("on")
+        })
+
+        btn_delete_yes.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+        btn_delete_no.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+    </script>
+
+    <script src="./js/include.js"></script>
+</body>
+</html>

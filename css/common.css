@@ -90,15 +90,16 @@ strong{
 
  .btn_common{
     display: inline-block;
-    background-color: #fff;
+    /* background-color: #fff; */
     border: 1px solid var(--main-color);
     border-radius: 0.7rem;
     padding: 0.5rem 1rem;
     box-sizing: border-box;
+    font-size: 0.9rem;
  }
  .btn_common:hover{
     background-color: var(--main-color);
-    color: #fff;
+    /* color: #fff; */
  }
  .btn_common:active{
     color: black;
@@ -108,14 +109,14 @@ strong{
     background-color: var(--main-color);
     border-radius: 0.7rem;
     padding: 0.5rem 1rem;
-    color: #fff;
+    /* color: #fff; */
  }
  .btn_common_orange:hover{
     color: #000;
  }
  .btn_common_orange:active{
     background-color: #ffffff00;
-    color: #fff;
+    /* color: #fff; */
     border: 1px solid var(--main-color);
  }
 
@@ -124,3 +125,44 @@ strong{
    color: var(--point-color);
    font-weight: var(--font-thin);
 }
+
+
+input[type="checkbox"]{
+   display: none;
+}
+label.checkbox{
+   display: inline-flex;
+   /* flex컨테이너가 inline태그처럼 포함하는 컨텐츠 만큼의 너비를 갖게되는 형태 */
+   align-items: center;
+   /* border: 1px solid red; */
+   /* width: 20px;
+   height: 20px; */
+   gap: .5rem;
+}
+.custom_checkbox{
+   border: 1px solid #000;
+   display: block;
+   width: 1rem;
+   height: 1rem;
+   border-radius: 0.3rem;
+}
+input[type="checkbox"]:checked+.custom_checkbox{
+   /* background-color: black; */
+   background: url("../img/icon_check.svg") no-repeat 50% 50% / 80% auto;
+}
+
+
+.bbs_pagination{
+   display: flex;
+   justify-content: center;
+   gap: var(--space-small);
+}
+.bbs_pagination a{
+   font-weight: bold;
+}
+.bbs_pagination a.on{
+   font-weight: bold;
+   color: var(--main-color);
+   text-decoration: underline;
+}
+

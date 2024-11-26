@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="">
+    <aside class="fixed_menu">
+    </aside>
+    <div class="header_wrap"></div>
+    <main>
+        <div class="sub_banner sub1">
+            <div class="banner_txt">
+                <h2>공지사항</h2>
+                <p>글을 등록하신 후에는 등록된 글을 확인하시고, 필요한 경우 수정이나 삭제를 하실 수 있습니다. <br>
+                    또한, 등록된 글의 조회수와 댓글수 등을 확인하여 고객들의 반응을 파악하실 수 있습니다.
+                </p>
+            </div>
+        </div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="commonFrame option_bar">
+            <label for="fixed_list" class="checkbox">
+                <input type="checkbox" id="fixed_list">
+                <span class="custom_checkbox"></span>
+                 공지알림
+            </label>
+        </div>
+        <form action="#" class="commonFrame">
+            <div class="form_title">
+                <label for="title">제목</label>
+                <input type="text" id="title" placeholder="제목을 입력해주세요.">
+            </div>
+            <div class="form_desc">
+                <label for="desc">게시글 내용</label>
+                <textarea id="desc" placeholder="공지사항 내용을 입력해주세요."></textarea>
+            </div>
+        </form>
+        <div class="form_submit commonFrame">
+            <input type="submit" value="작성완료" class="btn_common" id="submit_write">
+            <a href="/notice_list.html" class="btn_common">작성취소</a>
+        </div>
+        
+        <script>
+            //임시기능
+            document.querySelector("#sudmit_write").addEventListener("click",function(){
+                location.href = "/notice_list.html"
+            })
+        </script>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="./js/include.js"></script>
+</body>
+</html>
